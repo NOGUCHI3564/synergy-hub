@@ -1,130 +1,256 @@
 <!DOCTYPE html>
 <html lang="ja">
-
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>プライバシーポリシー | Synergy Hub</title>
-  <style>
-    body {
-      font-family: "Hiragino Kaku Gothic ProN", Meiryo, sans-serif;
-      line-height: 1.8;
-      padding: 2rem;
-      max-width: 800px;
-      margin: auto;
-      background: #f9f9f9;
-      color: #333;
-    }
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ブレーンフォーラム株式会社 - AI × HR × 外食 × 社会課題 × 芸術</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
 
-    h1 {
-      font-size: 1.8rem;
-      border-bottom: 2px solid #ccc;
-      padding-bottom: 0.5rem;
-      margin-bottom: 1rem;
-    }
+    <style>
+        /* Optional: Custom styles for better visual separation or hero section */
+        .hero-section {
+            background: linear-gradient(45deg, #e3f2fd, #bbdefb); /* Subtle gradient background */
+            min-height: 80vh; /* Minimum height for hero section */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #333;
+            padding: 80px 0; /* Add padding top/bottom */
+        }
+        .section-padding {
+            padding: 80px 0; /* Padding for content sections */
+        }
+        .business-item {
+            margin-bottom: 30px;
+        }
+        .business-item h3 {
+            color: #0d6efd; /* Bootstrap primary color */
+        }
+        .ai-approach-item h4 {
+             color: #198754; /* Bootstrap success color */
+             margin-top: 20px;
+             margin-bottom: 10px;
+        }
+         .ai-approach-item ul {
+             margin-bottom: 20px;
+         }
 
-    h2 {
-      font-size: 1.4rem;
-      margin-top: 2rem;
-      color: #444;
-    }
+         #contact {
+             background-color: #f8f9fa; /* Light background for contact */
+         }
 
-    p {
-      margin: 0.8rem 0;
-    }
-
-    ul {
-      margin: 0.5rem 0 1.5rem 1.5rem;
-    }
-
-    footer {
-      font-size: 0.9rem;
-      margin-top: 3rem;
-      color: #666;
-    }
-  </style>
+         footer {
+             background-color: #343a40; /* Dark background for footer */
+             color: white;
+             padding: 40px 0;
+             text-align: center;
+             font-size: 0.9em;
+         }
+         footer a {
+             color: #cccccc;
+             text-decoration: none;
+         }
+         footer a:hover {
+             color: white;
+             text-decoration: underline;
+         }
+    </style>
 </head>
-
 <body>
 
-  <h1>プライバシーポリシー</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-white sticky-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                ブレーンフォーラム株式会社
+                <span class="d-block small text-muted">BRAIN FORUM INC.</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">会社概要</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#business">事業内容</a>
+                    </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="#ai-approach">AIへの取り組み</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">お問い合わせ</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-  <p>
-    Synergy Hub（以下「当サイト」）は、個人情報の保護に関する法律および関連ガイドラインを遵守し、以下の方針に基づいて、個人情報を適切に取り扱います。
-  </p>
+    <section class="hero-section" id="home">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h1 class="display-4 fw-bold mb-3">ブレーンフォーラム株式会社</h1>
+                    <p class="lead mb-4">
+                        AI × HR × 外食 × 社会課題 × 芸術
+                    </p>
+                    <p class="fs-5">
+                         「AIを通じた人間と社会の対話」をミッションに、<br>
+                         多様な分野を横断するAIソリューションを提供しています。<br>
+                        「和とAI」をキーワードに、文化とテクノロジーが共創する未来を目指します。
+                    </p>
+                     <a href="#business" class="btn btn-primary btn-lg mt-4 me-2">事業内容を見る</a>
+                     <a href="#contact" class="btn btn-outline-primary btn-lg mt-4">お問い合わせ</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <h2>1. 取得する情報と利用目的</h2>
-  <p>当サイトが取得する情報および利用目的は以下のとおりです。</p>
-  <ul>
-    <li><strong>取得方法：</strong>氏名・住所・電話番号・メールアドレス等を、フォーム記入や登録時にご提供いただく場合があります。</li>
-    <li><strong>利用目的：</strong>
-      <ul>
-        <li>サービス提供・運営</li>
-        <li>ご本人確認・お問い合わせ対応</li>
-        <li>料金請求</li>
-        <li>キャンペーン等のご案内</li>
-      </ul>
-    </li>
-  </ul>
+    <section class="section-padding" id="about">
+        <div class="container">
+            <h2 class="text-center mb-5">会社概要 / About Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <h3 class="mb-3">私たちのビジョン</h3>
+                    <p>
+                        ブレーンフォーラム株式会社は、「AIを通じた人間と社会の対話」をミッションに、 HR・外食・社会課題・芸術という多様な分野を横断するAIソリューションを提供しています。
+                        「和とAI」をキーワードに、文化とテクノロジーが共創する未来を目指します。
+                    </p>
+                    <hr class="my-4">
+                    <h3 class="mb-3">会社情報</h3>
+                    <dl class="row">
+                        <dt class="col-sm-3">会社名</dt>
+                        <dd class="col-sm-9">ブレーンフォーラム株式会社<br><span class="text-muted small">BRAIN FORUM INC.</span></dd>
 
-  <h2>2. 個人情報の管理</h2>
-  <ul>
-    <li>正確性・最新性を維持するよう努めます。</li>
-    <li>社内規定に基づく安全管理措置を徹底します。</li>
-    <li>外部委託する際は適切な監督のもとで管理します。</li>
-    <li>保存期間を定め、終了後は速やかに廃棄します。</li>
-  </ul>
+                        <dt class="col-sm-3">代表取締役</dt>
+                        <dd class="col-sm-9">赤羽 良剛</dd>
 
-  <h2>3. 第三者への提供</h2>
-  <p>
-    当サイトは、法令に基づく場合を除き、事前にお客様の同意なく第三者へ個人情報を提供することはありません。
-  </p>
+                        <dt class="col-sm-3">所在地</dt>
+                        <dd class="col-sm-9">〒164-0013 東京都中野区南台3-26-12-702・703</dd>
 
-  <h2>4. 共同利用</h2>
-  <p>
-    以下の目的で業務提携先と個人情報を共同利用する場合があります：
-    <ul>
-      <li>顧客管理</li>
-      <li>ダイレクトメール等の販促活動</li>
-    </ul>
-  </p>
+                        <dt class="col-sm-3">電話番号</dt>
+                        <dd class="col-sm-9">090-4132-9344</dd>
 
-  <h2>5. 開示・訂正・利用停止のご請求</h2>
-  <p>
-    開示・訂正・利用停止等のご請求があった場合、本人確認のうえ、当サイト所定の手続きにより対応いたします。詳細はお問い合わせ窓口までご連絡ください。
-  </p>
+                         <dt class="col-sm-3">運営団体</dt>
+                        <dd class="col-sm-9">和とAI研究会、N＆R Laboratory</dd>
+                    </dl>
+                     </div>
+            </div>
+        </div>
+    </section>
 
-  <h2>6. セキュリティ対策</h2>
-  <p>
-    当サイトは、SSL（Secure Socket Layer）により通信内容を暗号化し、個人情報を保護しています。
-  </p>
+    <section class="section-padding bg-light" id="business">
+        <div class="container">
+            <h2 class="text-center mb-5">事業内容 / Business Areas</h2>
+            <div class="row">
+                <div class="col-md-6 col-lg-3 business-item">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5">AIと人材（HR）を結ぶ研究と実装</h3>
+                            <p class="card-text">人材領域におけるAI活用を研究し、公平性・多様性を尊重したマッチング支援や業務効率化ソリューションを開発・提供します。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 business-item">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                             <h3 class="card-title fs-5">外食産業向けAIソリューション開発</h3>
+                            <p class="card-text">需要予測、在庫管理、運営最適化など、外食産業の課題解決を目指すAIソリューションを開発。現場負担軽減と生産性向上に貢献します。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 business-item">
+                     <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                            <h3 class="card-title fs-5">メディア運営</h3>
+                            <p class="card-text">特定のテーマや形式にとらわれず、多様なメディアの企画・運営を行います。（具体的なメディアの種類や内容があればここに記載）</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3 business-item">
+                    <div class="card h-100 shadow-sm">
+                        <div class="card-body">
+                             <h3 class="card-title fs-5">芸術と生成AIを融合したイベント企画</h3>
+                            <p class="card-text">生成AIを活用し、新たな芸術表現や体験を創出するイベントを企画・実施。AIを創造性向上のパートナーとして探求します。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <h2>7. Cookie等による情報取得</h2>
-  <p>
-    当サイトでは、以下の目的でCookieを使用する場合があります。
-  </p>
-  <ul>
-    <li>ユーザー体験の向上</li>
-    <li>アクセス解析（Google Analytics等）</li>
-  </ul>
-  <p>
-    Cookieには個人を特定する情報は含まれません。ご自身でブラウザ設定から無効にすることも可能ですが、一部機能がご利用いただけなくなる場合があります。
-  </p>
-  <p>
-    Google Analyticsに関する詳細は、Googleの<a href="https://policies.google.com/technologies/partner-sites" target="_blank" rel="noopener">ポリシーと規約</a>をご参照ください。
-  </p>
+    <section class="section-padding" id="ai-approach">
+        <div class="container">
+             <h2 class="text-center mb-5">AIへの取り組み / Our Approach to AI</h2>
+             <div class="row justify-content-center">
+                <div class="col-md-10">
+                     <p class="lead text-center mb-4">
+                         ブレーンフォーラム株式会社は、人間中心の社会の実現を目指し、責任あるAIの開発・提供・利用を推進しています。<br>
+                         総務省・経済産業省が策定した「AI事業者ガイドライン（第1.1版）」に準拠し、安全で信頼性の高いAIの活用に努めています。
+                     </p>
 
-  <h2>8. お問い合わせ先</h2>
-  <p>本サービスに関するご質問や個人情報の取り扱いに関するお問い合わせは、以下までお願いいたします。</p>
-  <ul>
-    <li><strong>メールアドレス：</strong>contact@husais.com</li>
-  
-  </ul>
+                     <div class="ai-approach-item">
+                         <h4>AI事業者ガイドラインへの適合</h4>
+                         <p>当社は、ガイドラインの基本理念・共通の指針・実践方法に基づき、AIによる便益を最大化しつつリスクを最小化する取り組みを行っています。</p>
+                         <ul>
+                             <li>**基本理念（Why）:** 人間中心の社会の実現</li>
+                             <li>**共通の指針（What）:** AIの便益最大化とリスク最小化</li>
+                             <li>**実践手法（How）:** AIガバナンス構築と説明責任の確保</li>
+                         </ul>
+                         <p>また、AIの開発者・提供者・利用者それぞれの視点からの責任を重視し、ガイドラインに記載された行動目標や契約・運用に関する留意点も参照し、適切に実践しています。</p>
+                     </div>
 
-  <footer>
-    <p>最終更新日：2025年5月16日</p>
-  </footer>
+                     <div class="ai-approach-item">
+                         <h4>私たちのAIに対する姿勢</h4>
+                         <p>技術的な有効性だけでなく、その社会的影響にも配慮した責任ある姿勢を大切にしています。</p>
+                         <ul>
+                            <li>**人間中心のAI活用:** 各事業分野（HR、外食、芸術・メディア）において、公平性、現場負担軽減、創造性向上など、人や社会へのポジティブな影響を重視します。</li>
+                            <li>**透明性と説明責任:** AIシステムは意思決定の補助であり、判断過程や限界を丁寧に説明。人間による最終判断を尊重する仕組みを構築します。</li>
+                            <li>**リスクへの配慮と柔軟な運用:** バイアスや誤動作に備えモデルを定期的に見直し・更新。データはプライバシーと倫理性に配慮し、運用方針は社会変化に合わせて柔軟に調整します。</li>
+                            <li>**協働と対話:** AIを「対話の手段」と捉え、現場や利用者からのフィードバックを積極的に取り入れ、より良いAI社会の実現に貢献します。</li>
+                         </ul>
+                     </div>
+                </div>
+             </div>
+        </div>
+     </section>
 
+
+    <section class="section-padding" id="contact">
+        <div class="container">
+            <h2 class="text-center mb-5">お問い合わせ / Contact Us</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <p class="text-center lead mb-4">サービスに関するご質問、ご相談など、お気軽にご連絡ください。</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <h4>電話</h4>
+                            <p><a href="tel:09041329344" class="text-decoration-none">090-4132-9344</a></p>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                             <h4>Facebook</h4>
+                            <p><a href="https://www.facebook.com/profile.php?id=100028846461041" target="_blank" class="text-decoration-none">ブレーンフォーラム株式会社 Facebookページ <i class="bi bi-box-arrow-up-right small"></i></a></p>
+                        </div>
+                        <div class="col-12">
+                             <h4>住所</h4>
+                            <p>〒164-0013 東京都中野区南台3-26-12-702・703</p>
+                             <p><a href="https://www.google.com/maps/search/?api=1&query=東京都中野区南台3-26-12-702" target="_blank" class="text-decoration-none">Google Mapsで表示 <i class="bi bi-box-arrow-up-right small"></i></a></p>
+                        </div>
+                    </div>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p class="mb-1">© 2025 ブレーンフォーラム株式会社. All rights reserved.</p>
+            <p class="mb-0">運営：和とAI研究会 / N＆R Laboratory</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
