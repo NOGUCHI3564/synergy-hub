@@ -10,15 +10,42 @@
     <style>
         /* Optional: Custom styles for better visual separation or hero section */
         .hero-section {
-            background: linear-gradient(45deg, #e3f2fd, #bbdefb); /* Subtle gradient background */
+            /* Background Image Setting */
+            background: #e3f2fd url('hero.png') no-repeat center center / cover;
+            /* #e3f2fd は画像が表示されない場合のフォールバック色 */
+            /* url('hero.png') で画像を指定 */
+            /* no-repeat で繰り返しなし */
+            /* center center で中央配置 */
+            /* cover で要素全体を覆うように拡大縮小 */
+
             min-height: 80vh; /* Minimum height for hero section */
             display: flex;
             align-items: center;
             justify-content: center;
             text-align: center;
-            color: #333;
+            color: #333; /* Adjust text color if needed for readability over the image */
             padding: 80px 0; /* Add padding top/bottom */
+            position: relative; /* Required for absolute positioning of ::before */
         }
+
+        /* Overlay for better text readability on the image */
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent white overlay */
+            z-index: 1; /* Place overlay above background image but below text */
+        }
+
+        .hero-section .container {
+             position: relative; /* Ensure container content is above the overlay */
+             z-index: 2;
+        }
+
+
         .section-padding {
             padding: 80px 0; /* Padding for content sections */
         }
@@ -92,16 +119,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="display-4 fw-bold mb-3">ブレーンフォーラム株式会社</h1>
-                    <p class="lead mb-4">
-                        AI × HR × 外食 × 社会課題 × 芸術 × **タレントマネジメント**
-                    </p>
-                    <p class="fs-5">
-                         「AIを通じた人間と社会の対話」をミッションに、<br>
-                         多様な分野を横断するAIソリューションとサービスを提供しています。<br>
-                        「和とAI」をキーワードに、文化とテクノロジーが共創する未来を目指します。
-                    </p>
-                     <a href="#business" class="btn btn-primary btn-lg mt-4 me-2">事業内容を見る</a>
+                    <a href="#business" class="btn btn-primary btn-lg mt-4 me-2">事業内容を見る</a>
                      <a href="#contact" class="btn btn-outline-primary btn-lg mt-4">お問い合わせ</a>
                 </div>
             </div>
@@ -115,7 +133,7 @@
                 <div class="col-md-8">
                     <h3 class="mb-3">私たちのビジョン</h3>
                     <p>
-                        ブレーンフォーラム株式会社は、「AIを通じた人間と社会の対話」をミッションに、 HR・外食・社会課題・芸術・**タレントマネジメント**という多様な分野を横断するAIソリューションとサービスを提供しています。
+                        ブレーンフォーラム株式会社は、「AIを通じた人間と社会の対話」をミッションに、 HR・外食・社会課題・芸術・タレントマネジメントという多様な分野を横断するAIソリューションとサービスを提供しています。
                         「和とAI」をキーワードに、文化とテクノロジーが共創する未来を目指します。
                     </p>
                     <hr class="my-4">
@@ -214,7 +232,7 @@
                          <h4>私たちのAIに対する姿勢</h4>
                          <p>技術的な有効性だけでなく、その社会的影響にも配慮した責任ある姿勢を大切にしています。</p>
                          <ul>
-                            <li>**人間中心のAI活用:** 各事業分野（HR、外食、芸術・メディア、**タレントマネジメント**）において、公平性、現場負担軽減、創造性向上、**タレントの活躍支援**など、人や社会へのポジティブな影響を重視します。</li>
+                            <li>**人間中心のAI活用:** 各事業分野（HR、外食、芸術・メディア、タレントマネジメント）において、公平性、現場負担軽減、創造性向上、タレントの活躍支援など、人や社会へのポジティブな影響を重視します。</li>
                             <li>**透明性と説明責任:** AIシステムは意思決定の補助であり、判断過程や限界を丁寧に説明。人間による最終判断を尊重する仕組みを構築します。</li>
                             <li>**リスクへの配慮と柔軟な運用:** バイアスや誤動作に備えモデルを定期的に見直し・更新。データはプライバシーと倫理性に配慮し、運用方針は社会変化に合わせて柔軟に調整します。</li>
                             <li>**協働と対話:** AIを「対話の手段」と捉え、現場や利用者からのフィードバックを積極的に取り入れ、より良いAI社会の実現に貢献します。</li>
